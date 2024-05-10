@@ -1,0 +1,27 @@
+/* Footer.css */
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+  gap: 20px; /* Gap between columns */
+  background-color: #333;
+  color: #fff;
+  padding: 20px 80px;
+}
+
+/* Media Query for Medium Screen */
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    padding: 20px;
+  }
+}
+
+/* Media Query for Small Screen */
+@media (max-width: 576px) {
+  .footer {
+    grid-template-columns: 1fr;
+    /* Single column */
+    padding: 20px;
+  }
+}

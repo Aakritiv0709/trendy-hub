@@ -1,0 +1,129 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 20;
+  width: 250px;
+  background-color: white;
+  box-shadow: 0 2px 0 0 black;
+  transition: transform;
+  height: 100%;
+  transition-duration: 0.9s;
+  transition-timing-function: ease;
+  transition-delay: 0.9s;
+}
+.open_Sidebar {
+  transform: translateX(0);
+  transition: transform;
+  transition-duration: 0.9s;
+  transition-timing-function: ease;
+  transition-delay: 0.9s;
+}
+.closed_Sidebar {
+  transform: translateX(-100%);
+}
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.sidebar ul {
+  padding: 1rem;
+}
+
+.closeButton {
+  position: fixed;
+  top: 10px;
+  left: 210px;
+  background-color: rgb(209, 41, 128);
+  color: #fff;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.sidebar .logo {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sidebar .link {
+  margin-bottom: 0.5rem;
+  list-style-type: none;
+  text-align: center;
+}
+
+.sidebar .link a {
+  display: block;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  color: #333333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar .link a:hover {
+  background-color: rgb(209, 41, 128);
+  color: #fff;
+}
+
+.sidebar .active a {
+  background-color: rgb(209, 41, 128);
+  color: #fff;
+}
+
+.openButton {
+  position: fixed;
+  top: 10;
+  left: 10;
+  background-color: rgb(209, 41, 128);
+  color: #fff;
+  cursor: pointer;
+  width: 37px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.openButton.hidden {
+  display: none;
+}
+.loginButton {
+  width: 80px;
+  height: 40px;
+  margin-top: 0.5rem;
+  background-color: rgb(209, 41, 128);
+  border-radius: 0.25rem;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+
+  color: white;
+}
+.loginButton:hover {
+  background-color: rgb(228, 11, 123);
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+li {
+  list-style-type: none;
+}

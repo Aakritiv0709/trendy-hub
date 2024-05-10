@@ -1,0 +1,136 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px -2px black;
+  min-height: 70px;
+  align-items: center;
+  padding: 20px 80px;
+  position: relative;
+}
+.main_logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.main_logo img {
+  width: 50px;
+  height: 50px;
+}
+.main_logo h4 {
+  align-self: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+.navbar .navlinks {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.navlinks li {
+  cursor: pointer;
+}
+.navlinks hr {
+  border: none;
+  height: 2px;
+  border-radius: 30px;
+  background: rgb(209, 41, 128);
+}
+.links {
+  text-decoration: none;
+  color: black;
+}
+.cart_section {
+  display: flex;
+  gap: 20px;
+  float: right;
+}
+.cart_section img {
+  width: 30px;
+  height: 30px;
+}
+.cart_section button {
+  background-color: rgb(209, 41, 128);
+  padding: 10px 25px 10px 25px;
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 17px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.cart_section button:active {
+  background-color: rgb(151, 12, 84);
+}
+.cart_count {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  margin-top: -12px;
+  margin-left: -30px;
+  border-radius: 11px;
+  align-items: center;
+  font-size: 14px;
+  background: rgb(209, 41, 128);
+  color: white;
+}
+.sidebar {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar .navlinks {
+    display: none;
+  }
+  .main_logo {
+    gap: 2px;
+  }
+  .sidebar {
+    display: block;
+    min-height: 34px;
+    min-width: 40px;
+    gap: 10px;
+  }
+
+  .logo_section img {
+    width: 30px;
+    height: 30px;
+  }
+  .main_logo h4 {
+    align-self: center;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .cart_section img {
+    width: 25px;
+    height: 25px;
+  }
+  .cart_section button {
+    background-color: rgb(209, 41, 128);
+    padding: 5px 15px 5px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: none;
+  }
+  .cart_count {
+    width: 22px;
+    height: 22px;
+    justify-content: center;
+    margin-top: -11px;
+    margin-left: -28px;
+    border-radius: 11px;
+    align-items: center;
+    font-size: 14px;
+    background: rgb(209, 41, 128);
+    color: white;
+  }
+}

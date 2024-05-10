@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 639px) {
+  .custom_container {
+    padding: 10px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 640px) {
+  .custom_container {
+    max-width: 1780px;
+    margin: 0 auto;
+  }
+}
