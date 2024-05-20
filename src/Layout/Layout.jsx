@@ -8,7 +8,7 @@ const Layout = () => {
     <div className="custom_container">
       <Navbar />
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

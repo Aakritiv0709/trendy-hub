@@ -33,12 +33,12 @@
 .navlinks li {
   cursor: pointer;
 }
-.navlinks hr {
+/* .navlinks hr {
   border: none;
-  height: 2px;
+  height: 1px;
   border-radius: 30px;
   background: rgb(209, 41, 128);
-}
+} */
 .links {
   text-decoration: none;
   color: black;
@@ -50,21 +50,25 @@
 }
 .cart_section img {
   width: 30px;
-  height: 30px;
+  height: 35px;
+  align-items: center;
 }
 .cart_section button {
   background-color: rgb(209, 41, 128);
   padding: 10px 25px 10px 25px;
   border-radius: 0.25rem;
   border: none;
-  font-size: 17px;
+  font-size: 15px;
   color: white;
   font-weight: 500;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-.cart_section button:active {
+.cart_section button:hover {
   background-color: rgb(151, 12, 84);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .cart_count {
   width: 22px;
   height: 22px;
@@ -112,15 +116,13 @@
 
   .cart_section img {
     width: 25px;
-    height: 25px;
+    height: 30px;
+    align-items: center;
   }
   .cart_section button {
-    background-color: rgb(209, 41, 128);
-    padding: 5px 15px 5px 15px;
-    border-radius: 6px;
-    font-size: 14px;
     display: none;
   }
+
   .cart_count {
     width: 22px;
     height: 22px;

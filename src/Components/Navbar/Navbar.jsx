@@ -51,7 +51,7 @@ const Navbar = () => {
             <Link to={link.links} className={NavbarStyles.links}>
               {link.title}
             </Link>
-            {menu === link.title ? <hr /> : <></>}
+            {/* {menu === link.title ? <hr /> : <></>} */}
           </li>
         ))}
       </ul>

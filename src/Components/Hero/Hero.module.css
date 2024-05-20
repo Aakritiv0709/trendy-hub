@@ -1,0 +1,90 @@
+.hero_parent {
+  display: flex;
+  justify-content: space-between;
+  max-height: 820px;
+  height: 100%;
+  padding: 0px 80px;
+  background-image: url("/bg-1.jpg");
+}
+.hero_banner_img img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+.hero_content {
+  align-content: center;
+  text-align: center;
+}
+.ultimate_collection {
+  color: black;
+  opacity: 0.8;
+  font-size: 15px;
+  font-weight: 600;
+}
+.complete_store {
+  color: black;
+  font-size: 60px;
+}
+.shop_btn {
+  background-color: rgb(209, 41, 128);
+  padding: 15px 25px 15px 25px;
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.shop_btn:hover {
+  background-color: rgb(151, 12, 84);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .hero_parent {
+    display: flex;
+    justify-content: space-between;
+    max-height: 700px;
+    height: 100%;
+    max-width: 100%;
+    align-content: center;
+    padding: 0px 80px;
+  }
+  .hero_banner_img img {
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .ultimate_collection {
+    font-size: 15px;
+  }
+  .complete_store {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero_parent {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    max-width: 100%;
+    align-content: center;
+    padding: 0px 20px;
+    flex-direction: column-reverse;
+  }
+  .hero_banner_img img {
+    width: 100%;
+    max-height: 600px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .ultimate_collection {
+    font-size: 15px;
+  }
+  .complete_store {
+    font-size: 35px;
+  }
+}

@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
 import Layout from "./Layout/Layout.jsx";
 import Home from "./Pages/Home/Home.jsx";
 import Cart from "./Pages/Cart/Cart.jsx";
@@ -13,6 +17,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Layout />,
     children: [
+      {
+        path: "/",
+        element: <Navigate to="/home" replace />,
+      },
       {
         path: "home",
         element: <Home />,
@@ -44,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "kids",
         element: <ShopCategory category="kids" />,
+      },
+      {
+        path: "*",
+        element: <Navigate to="/" replace />,
       },
     ],
   },
